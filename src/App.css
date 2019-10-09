@@ -4,10 +4,11 @@
     max-width: 550px;
     border-radius: 15px;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    padding: 25px;
 }
 .display {
-    margin-top: 25px;
+    margin: 25px 0 40px 25px;
+
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -19,4 +20,52 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-content: center; */
+}
+
+.button {
+    color: white;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 2.2rem;
+}
+
+.buttonSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.leftSide {
+    width: 60%;
+}
+.numberContainer {
+   /*  border: 1px solid yellow; */
+}
+.specialContainer {
+    /* border: 1px solid white; */
+}
+
+.operatorContainer {
+   /*  border: 1px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+}
+
+.numberContainer .button {
+    background-color: #184379;
+}
+.operatorContainer .button {
+    background-color: #237293;
+}
+.specialContainer .button {
+    background-color: #225D9E;
+}
