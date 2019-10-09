@@ -8,8 +8,6 @@ import { operators, numbers } from '../../../data';
 const Operators = (props) => {
 
   const [oper, setOper] = useState (operators); 
-  console.log ("Operator props: " + props);
-  console.log (operators);
   // STEP 2 - add the imported data to state
   return (
     <div className = "operatorContainer">
@@ -17,7 +15,8 @@ const Operators = (props) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/
        oper.map((operators, index) => (
-         <OperatorButton key={index} operator={operators} />
+         <OperatorButton key={index} operator={operators}
+            displayUpdate={props.displayUpdate} />
        ))
        }
     </div>

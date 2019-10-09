@@ -12,9 +12,6 @@ const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [num, setNum] = useState (numbers);
 
-  console.log ("Number props: " + props);
-  console.log (numbers);
-
   return (
 
     <div className = "numberContainer">
@@ -22,7 +19,8 @@ const Numbers = (props) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {num.map((numbers, index) => (
-         <NumberButton key={index} number={numbers} />))}
+         <NumberButton key={index} number={numbers}
+            displayUpdate={props.displayUpdate} />))}
 
     </div>
   );
