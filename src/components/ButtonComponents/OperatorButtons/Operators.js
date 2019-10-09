@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import OperatorButton from "./OperatorButton";
 
 //import any components needed
-import { operators, numbers } from '../../../data';
+import { operators } from '../../../data';
 //Import your array data to from the provided data file
 
 const Operators = (props) => {
